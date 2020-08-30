@@ -7,3 +7,7 @@ charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = false
 end_of_line = lf
+
+[*.yml]
+indent_size = 2
+indent_style = space
