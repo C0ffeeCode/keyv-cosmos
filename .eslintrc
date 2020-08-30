@@ -1,0 +1,5 @@
+{
+	"eslintConfig": {
+		"extends": "eslint-config-subaru"
+	}
+}

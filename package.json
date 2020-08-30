@@ -50,9 +50,6 @@
 		"ava": "^3.12.1",
 		"nyc": "^15.1.0"
 	},
-	"eslintConfig": {
-		"extends": "eslint-config-subaru"
-	},
 	"ava": {
 		"require": [
 			"requirable"

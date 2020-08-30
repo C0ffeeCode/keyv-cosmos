@@ -15,6 +15,6 @@ if (isLocal == true)
 // keyvOfficialTests(test, Keyv, connectionString, "");
 
 const store = () => new KeyvCosmos(connectionString,
-	{databaseId: databaseId, containerId: containerId});
+	{databaseId, containerId});
 
 keyvTestSuite(test, Keyv, store);

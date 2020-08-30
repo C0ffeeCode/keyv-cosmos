@@ -29,30 +29,30 @@ class KeyvCosmos extends EventEmitter implements Store<any>
 		}
 		catch
 		{
-			return undefined;
+			return;
 		}
 	}
 
 	public async set(key: string, value: any, ttl?: number)
 	{
-		if (typeof value === "undefined")
-			return Promise.resolve(undefined);
+		if (typeof value == "undefined")
+			return Promise.resolve();
 
 		// ttl in Cosmos is in seconds, in Keyv it is milliseconds
 		// undefined ttl means default, -1 means forever
-		if (typeof ttl === "number" && ttl > 0)
+		if (typeof ttl == "number" && ttl > 0)
 			ttl /= 60;
 		if (ttl && ttl < 0)
 			ttl = -1;
 		if (ttl)
 			ttl = Math.round(ttl);
 
-		return this.container.items.upsert({ id: key, ttl: ttl, value: value, namespace: this.namespace });
+		return this.container.items.upsert({ id: key, ttl, value, namespace: this.namespace });
 	}
 
 	public async delete(key: string)
 	{
-		if (typeof key !== "string")
+		if (typeof key != "string")
 			return false;
 
 		try
