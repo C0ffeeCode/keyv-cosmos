@@ -9,7 +9,7 @@ const databaseId = process.env.databaseId || "KeyvTest";
 const containerId = process.env.containerId || "KeyvTestContainer";
 const isLocal = process.env.connectionString == undefined;
 
-if (isLocal == true)
+if (isLocal === true)
 	process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 
 // keyvOfficialTests(test, Keyv, connectionString, "");
