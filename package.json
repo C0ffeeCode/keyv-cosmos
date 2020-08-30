@@ -1,6 +1,6 @@
 {
 	"name": "keyv-cosmos",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "CosmosDB storage adapter for Keyv",
 	"author": "C0ffeeCode",
 	"license": "MIT",
@@ -28,9 +28,7 @@
 		"test": "nyc ava"
 	},
 	"dependencies": {
-		"@azure/cosmos": "^3.9.1",
-		"ava": "^3.12.1",
-		"nyc": "^15.1.0"
+		"@azure/cosmos": "^3.9.1"
 	},
 	"devDependencies": {
 		"@keyv/test-suite": "*",
@@ -42,7 +40,9 @@
 		"keyv": "*",
 		"ts-node": "^9.0.0",
 		"typescript": "^4.0.2",
-		"requirable": "^1.0.5"
+		"requirable": "^1.0.5",
+		"ava": "^3.12.1",
+		"nyc": "^15.1.0"
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-subaru"
