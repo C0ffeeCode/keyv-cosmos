@@ -1,6 +1,6 @@
 {
 	"name": "keyv-cosmos",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "CosmosDB storage adapter for Keyv",
 	"author": "C0ffeeCode",
 	"license": "MIT",
