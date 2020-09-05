@@ -86,4 +86,5 @@ class KeyvCosmos extends EventEmitter implements Store<any>
 }
 
 export { KeyvCosmos };
+export default KeyvCosmos;
 module.exports = KeyvCosmos;
