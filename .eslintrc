@@ -1,5 +1,59 @@
 {
-	"eslintConfig": {
-		"extends": "eslint-config-subaru"
+	"root": true,
+	"env": {
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": 2021,
+		"impliedStrict": true
+	},
+	"rules": {
+		"no-eq-null": "warn",
+		"eqeqeq": ["warn", "smart"],
+		"no-var": "error",
+		"prefer-const": "warn",
+		"no-trailing-spaces": "warn",
+		"prefer-arrow-callback": "warn",
+		"spaced-comment": "warn",
+		"new-parens": "warn",
+		"indent": ["warn", "tab"],
+		"linebreak-style": ["warn", "unix"],
+		"quotes": ["warn", "double"],
+		"semi": ["error", "always"],
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"space-before-function-paren": [
+			"warn",
+			{
+				"anonymous": "never",
+				"named": "never",
+				"asyncArrow": "always"
+		}],
+		"keyword-spacing": ["warn", {
+			"before": true,
+			"after": true
+		}],
+		"brace-style": [
+			"warn",
+			"allman",
+			{ "allowSingleLine": true }
+		],
+		"max-len": [
+			"warn",
+			{
+				"code": 80,
+				"tabWidth": 0,
+				"ignoreUrls": true,
+				"ignoreComments": true,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true,
+				"ignoreRegExpLiterals": true
+			}
+		]
 	}
 }

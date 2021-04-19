@@ -24,8 +24,11 @@ const Keyv = require("keyv");
 const KeyvCosmos = require("keyv-cosmos");
 
 const store = new KeyvCosmos(connectionString,
-	{databaseId: databaseId, containerId: containerId});
+	{ databaseId: databaseId, containerId: containerId });
 
 const keyv = new Keyv(connectionString, {store: store});
 
 keyv.on("error", handleConnectionError);
+```
+Make sure your partition key is **not** "/id" or "/value"!
+Also, set TTL to "On (no default)" to enable TTL.
