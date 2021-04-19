@@ -1,6 +1,6 @@
 {
 	"name": "keyv-cosmos",
-	"version": "1.0.4",
+	"version": "1.1.0",
 	"description": "CosmosDB storage adapter for Keyv",
 	"author": "C0ffeeCode",
 	"license": "MIT",
@@ -25,6 +25,12 @@
 		"url": "https://github.com/C0ffeeCode/keyv-cosmos"
 	},
 	"readme": "./README.md",
+	"bugs": "https://github.com/C0ffeeCode/keyv-cosmos/issues",
+	"badges": [{
+		"description": "CodeQL",
+		"href": "https://www.codacy.com/manual/C0ffeeCode/keyv-cosmos?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=C0ffeeCode/keyv-cosmos&amp;utm_campaign=Badge_Grade",
+		"url": "https://app.codacy.com/project/badge/Grade/a435705f5bc4470faef21961b8943548"
+	}],
 	"main": "./dist/index.js",
 	"typings": "./dist/index.d.ts",
 	"scripts": {
